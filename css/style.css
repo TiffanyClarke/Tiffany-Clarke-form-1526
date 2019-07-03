@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+form {
+    margin: 2rem;
+    background-color: #F5F5F5;
+    
+}
+
+.box {
+   margin: 0 0 1rem 0; 
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 1.25rem;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"] {
+    font-family: "Arial", "Helvetica", sans-serif;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+legend {
+    font-size: 2rem;
+    border: 2px solid #ddd;
+    padding: 1rem;
+    
+}
+
+.grid {
+    max-width: 60rem;
+    margin: 1rem;
+}
+
+.box-3 {
+    padding-bottom: 2rem;
+}
+
+.box-3 input {
+    padding: 1rem;
+}
+
+input[type="button"]{
+    background-color: #6495ED;
+    border-radius: 8px;
+    color: #DDD;
+    width: 95%;
+    padding: 5px;
+}
+
+/*Media Quaries*/
+@media all and (min-width: 40rem) {
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 1rem;
+  }
+  
+  
+  .container grid:nth-child(1n + 3) {
+    transform: translateY(-50%);
+  }
+    legend {
+        font-size: 1.5rem;
+    }
+   
+    form {
+        width: 95%;
+    }
+    
+    input[type="button"]{
+    background-color: #6495ED;
+    border-radius: 8px;
+    color: #DDD;
+    width: 15%;
+    padding: 5px;
+}
+
+}
+
+
